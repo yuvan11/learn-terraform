@@ -11,7 +11,6 @@ Dev+ops
 
 
 ### ci/cd (PIPELINES)
-
 # Continuous Integration(CI)
 
 Process of integration
