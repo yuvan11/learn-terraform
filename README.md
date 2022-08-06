@@ -109,3 +109,27 @@ A common configuration naming called **main.tf**, containing multiple blocks
 - variables.tf - contain variables declaration
 - outputs.tf - contains outputs from resources
 - provider.tf - contains provider definition
+
+
+
+
+# variable Precedence
+
+- Environment variables
+
+```
+export TF_VAR_FILENAME="/roots/cat.txt"
+```
+- Terraform.tfvars
+```
+ filename="/root/pets.txt"
+```
+- *.auto.tfvars(alphabetical order)
+```
+filename="/root/mypet.txt"
+```
+- passing -var or --var file (command-line args)(High precedence)
+```
+terraform apply -var "filename="/root/home/pets.txt"
+```
+
