@@ -110,6 +110,9 @@ A common configuration naming called **main.tf**, containing multiple blocks
 - outputs.tf - contains outputs from resources
 - provider.tf - contains provider definition
 
+
+
+
 # variable Precedence
 
 - Environment variables
@@ -129,3 +132,4 @@ filename="/root/mypet.txt"
 ```
 terraform apply -var "filename="/root/home/pets.txt"
 ```
+
